@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Accomodation Management System - Login Page</title>
+    <title>Login Page</title>
   </head>
   <body>
     
