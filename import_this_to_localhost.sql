@@ -18,8 +18,7 @@ category varchar(20),
 course_id varchar(20) references course);
 
 create table staff (
-staff_id int not null primary key,
-staff_name varchar(20),
+staff_id varchar(20) not null primary key,
 password varchar(10));
 
 create table relative (
@@ -49,6 +48,23 @@ status varchar(10),
 student_id int references student,
 place_number int references place,
 staff_id int references staff);
+
+insert into course (course_id, course_name, leader, department) values
+('BA', 'Business Administrative', 'Mr. Lee', 'FOB'),
+('ACC', 'Accounting', 'Mr. Anthony Ramadras', 'FOB'),
+('FIB', 'Foundation in Business', 'Mrs. Siti Hasmah', 'FOB'),
+('IL', 'International Law', 'Mr. Wong', 'FOL'),
+('FIL', 'Foundation in Law', 'Mr. Ahmad Rizal bin Selamat', 'FOL'),
+('DCN', 'Data Communication and Networking', 'Dr. Subarmaniam Kannan', 'FIST'),
+('ST', 'Security Technology', '	Ms. Ooi Shih Yin', 'FIST'),
+('BI', 'Bioinformatics', 'Dr. Ng Chong Han', 'FIST'),
+('FIT', 'Foundation in Information Technology', 'Dr. Afizan', 'FIST'),
+('ITM', 'Information Technology Management', 'Dr. Afizan', 'FIST'),
+('AI', 'Artificial intelligence', 'Dr. Tan', 'FIST'),
+('TCM', 'Telecommunications', 'Dr. Koo Voon Chet', 'FET'),
+('RA', 'Robotics and Automation', 'Dr. Sim Kok Swee', 'FET'),
+('ME', 'Mechanical Engineering', 'Dr. Tso Chih Ping', 'FET'),
+('FIE', 'Foundation in Engineering', 'Dr. Koo Voon Chet', 'FET');
 
 insert into student (student_id, fname, lname, address, dob, category, course_id) values
 ('1141327308', 'Louis', 'Lee', 'Jalan melaka', '1993-06-30', '2UG', 'ITM'),
@@ -94,20 +110,6 @@ insert into place (place_number, rent_rate, hall_number, room_number) values
 ('30302', '75', '303', '02'),
 ('30303', '75', '303', '03');
 
+insert into staff values
+('admin123','abc123');
 
-insert into course (course_id, course_name, leader, department) values
-('BA', 'Business Administrative', 'Mr. Lee', 'FOB'),
-('ACC', 'Accounting', 'Mr. Anthony Ramadras', 'FOB'),
-('FIB', 'Foundation in Business', 'Mrs. Siti Hasmah', 'FOB'),
-('IL', 'International Law', 'Mr. Wong', 'FOL'),
-('FIL', 'Foundation in Law', 'Mr. Ahmad Rizal bin Selamat', 'FOL'),
-('DCN', 'Data Communication and Networking', 'Dr. Subarmaniam Kannan', 'FIST'),
-('ST', 'Security Technology', '	Ms. Ooi Shih Yin', 'FIST'),
-('BI', 'Bioinformatics', 'Dr. Ng Chong Han', 'FIST'),
-('FIT', 'Foundation in Information Technology', 'Dr. Afizan', 'FIST'),
-('ITM', 'Information Technology Management', 'Dr. Afizan', 'FIST'),
-('AI', 'Artificial intelligence', 'Dr. Tan', 'FIST'),
-('TCM', 'Telecommunications', 'Dr. Koo Voon Chet', 'FET'),
-('RA', 'Robotics and Automation', 'Dr. Sim Kok Swee', 'FET'),
-('ME', 'Mechanical Engineering', 'Dr. Tso Chih Ping', 'FET'),
-('FIE', 'Foundation in Engineering', 'Dr. Koo Voon Chet', 'FET');
