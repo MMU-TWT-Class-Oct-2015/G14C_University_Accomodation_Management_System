@@ -229,6 +229,9 @@ height:450px;
 		case 'news':
 		include('news.php');
 		break;
+                case 'about':
+		echo "<script>document.location='about.php'</script>";
+                break;
 		case 'notice':
 		include('notice.php');
 		break;
