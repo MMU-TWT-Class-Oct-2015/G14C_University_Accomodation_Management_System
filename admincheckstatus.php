@@ -33,7 +33,7 @@ include 'database.php';
          <tr><td class=\"bold\">Lease Number:</td><td><input type=text name=lnumber> eg : L*****</td></tr>
          <tr><td></td><td><input name="submitCheck" type=submit value="Submit!">&nbsp;&nbsp;<input type=reset value=Clear></td></tr>
 </table>
-</form>
+
 <?php
 
 if (isset($_POST['submitCheck'])) {
@@ -52,17 +52,18 @@ $result = mysql_query($query) or die(mysql_error());
              <tr><td class=\"bold\">Place Number:</td><td>$row[5]</td></tr>
              <tr><td class=\"bold\">Start Date:</td><td>$row[1]</td></tr>
              <tr><td class=\"bold\">End Date:</td><td>$row[2]</td></tr>
-             <tr><td class=\"bold\">Status:</td><td>$row[3]</td><td><button name=\"statusUpdate\" >Update Status to Approve</button></td></tr>
+             <tr><td class=\"bold\">Status:</td><td>$row[3]</td><td><input type=submit name=\"statusUpdate\" value=\"Update Status to Approve\"></td></tr>
              </table><hr width=\"1050px\">";
 }
+}
 if (isset($_POST['statusUpdate'])) {
+	extract($_POST);
  $query = "UPDATE `lease` SET `status` = 'Approve' WHERE lease_number ='$update4'";
  $result = mysql_query($query) or die(mysql_error());
 
- echo "Update Done!<br>";
-}
-}
+ echo "<H1 align=\"center\" border=\"0\">Update Done !</h1>";
+ }
 ?>
-
+</form>
 </body>
 </html>
