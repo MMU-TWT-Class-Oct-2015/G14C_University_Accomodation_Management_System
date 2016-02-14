@@ -21,27 +21,58 @@ Web Broswer is used to view the design of our system and interact with it. On th
 ---
 ## **Operating the system**
 
-There are 7 php forms in total for our system. Where there is 4 main forms and 3 subset forms of a single form.
+There are 13 php forms in total for our system.
 
 
->1. The first form being the homepage (index.php) In the homepage there is 3 navigation tab. The first allows the user to either click on the homepage being the current page, or navaigate to the about page or the admin login where the end user of the system is allowed to key in their credentials and accomodate student in getting a room with Melaka University.
+>1. The first form being the homepage (index.php) In the homepage there is 3 navigation tab. The first allows the user to either click on the homepage being the current page, or navigate to the about page or the admin login where the end user of the system is allowed to key in their credentials and accomodate student in getting a room with Multimedia University.
 
-![Homepage](http://i.imgur.com/dMwjKwt.jpg)
+![Homepage](http://i.imgur.com/IRqBu6Y.jpg)
 
->2. The second form which is the about page (about.php) is also a subset to the following three other forms which are the faculty tab (faculty.php), facilites tab (facilities.php), hostel tab (hostel.php)
->- about.php - contains the details about the current chancellor of Melaka University.
->- facilities.php - contains the details about the facilities available in Melaka University.
->- faculties.php - contains the details about the faculties available in Melaka University.
->- hostel.php - contains the details about the hostels in Melaka University.
+>2. The second form which is the about page (about.php) is also a subset to the following four other forms which are the faculty tab (faculty.php), facilites tab (facilities.php), hostel tab (hostel.php)
+>- about.php - contains the details about the current chancellor of Multimedia University.
+
+![About](http://i.imgur.com/Yr9ocsQ.jpg)
+
+>- facilities.php - contains the details about the facilities available in Multimedia University.
+
+![Facilities](http://i.imgur.com/dGD6arJ.jpg)
+
+>- faculties.php - contains the details about the faculties available in Multimedia University.
+
+![Faculties](http://i.imgur.com/ZsMxbwc.jpg)
+
+>- hostel.php - contains the details about the hostels in Multimedia University.
+
+![Hostel](http://i.imgur.com/GTO6Hxs.jpg)
 
 >3. The third form is the login form where the end user of the system is to login into the main form which is the form used for registration etc.
 > To login, the user is required to key in their credentials (username, password)
-. The credentials is then cross-reference with the SQL file to verify the user's details. If it is succesful, user is then able to access the main form.
 
->4. The forth and final form is the main form (main.php). In this form user is able to register the student of Melaka University and aid them in booking a room in MU's hostel. There are 5 options in total as listed below:
+![Login](http://i.imgur.com/I1jkgP1.jpg)
+
+>The credentials is then cross-reference with the SQL file to verify the user's details. If it is succesful, user is then able to access the main form.
+
+![succesful Login](http://i.imgur.com/nYR12n2.jpg)
+
+>4. The forth and final form is the main form (adminindex.php) where it is only accessible once the user has successfully login. In this form user brought to a menu where user can choose from the following options on the tab. This is where the user will register student to either book, check status and etc. There are 5 options (5 subset forms) in total as listed below:
+
+![Menu](http://i.imgur.com/Kj7Uuzg.jpg)
+
 >- Registration tab - it is used to register the student's detail and store it into the database.
->- Book Room tab - it is used to book a room of an available student of Melaka University.
->- Check Status tab - it is used to check status of available student's that have booked a room in MU's hostel. It is searched via a lease number that is provided after booking a room.
->- View Application tab - it is used to show all available student's that have booked a room with MU's hostel accomodation system.
+
+![Registration](http://i.imgur.com/gB5ecYe.jpg)
+
+>- Book Room tab - it is used to book a room of an available student of Multimedia University.
+
+![Book Room](http://i.imgur.com/1e9q4ha.jpg)
+
+>- Check Status tab - it is used to check status of available student's that have booked a room in MMU's hostel. It is searched via a lease number that is provided after booking a room.
+
+![Status](http://i.imgur.com/Tul5RJU.jpg)
+
+>- View Application tab - it is used to show all available student's that have booked a room with MMU's hostel accomodation system.
+
+![View Application](http://i.imgur.com/5VErrjB.jpg)
+
 >- Logout tab - The logout tab does as it says. It logs out the user from the main form.
 ---

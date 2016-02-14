@@ -39,52 +39,22 @@ session_start();
 </div>
 
 	<div id="nav">
-    <a href="about.php">Chancellor of MMU</a>&nbsp&nbsp&nbsp
+  <a href="about.php">Chancellor of MMU</a>&nbsp&nbsp&nbsp
 
-    <a href="facilities.php">Facilities of MMU</a>&nbsp&nbsp&nbsp
+  <a href="facilities.php">Facilities of MMU</a>&nbsp&nbsp&nbsp
 
-    <a href="faculty.php">Faculties of MMU</a>&nbsp&nbsp&nbsp
+  <a href="faculty.php">Faculties of MMU</a>&nbsp&nbsp&nbsp
 
-    <a href="hostel.php">Hostel of MMU</a>
+  <a href="hostel.php">Hostel of MMU</a>
 </div>
 
 <div id="section">
-<h1 style="text-align:center;">Faculties in MMU</h1>
-<p> </p>
-<ol>
-       <li>Faculty of Business (FOB)</li>
-       <ul>
-         <li>Accounting (ACC)</li>
-         <li>Business Administration (BA)</li>
-         <li>Foundation in Business (FIB</li>
-       </ul>
-       <br>
-       <li>Faculty of Law (FOL)</li>
-       <ul>
-         <li>International Law (IL)</li>
-         <li>Foundation in Law (FIL)</li>
-       </ul>
-       <br>
-       <li>Faculties of Information Technology (FIST)</li>
-       <ul>
-    	 <li>Data Communication and Networking (DCN)</li>
-    	 <li>Information Technlogy Management (ITM)</li>
-    	 <li>Security Technology (ST)</li>
-    	 <li>Bioinformatics (BI)</li>
-       <li>Foundation in Information Technology (FIT)</li>
-       </ul>
-       <br>
-       <li>Faculty of Engineering (FOE)</li>
-       <ul>
-         <li>Telecommunications (TCM)</li>
-         <li>Mechnical Engineering (ME)</li>
-         <li>Robotics and Automation (RA)</li>
-         <li>Foundation in Engineering (FE)</li>
-       </ul>
-     </ol>
+<h1 style="text-align:center;">Hostel of MMU</h1>
 
-
-
+<p align="center" style="text-align: center;"><strong> <img src="images/singleroom.jpg" /></strong></p>
+<p style="text-align: justify;">The hostel in MMU are all single rooms. There are around a total of 9 rooms in each hall. </p>
+<p style="text-align: justify;">To book a room in the hostel, please go to the student affairs department and allow the staff to aid you in the booking process. </p>
+<p style="text-align: justify;">Every room is a single room and the prices vary (weekly basis rental) based on the halls starting from RM50/week.</p>
 </div>
 <div id="footer"><b>
 &copy;copyright by Melaka.com</b>

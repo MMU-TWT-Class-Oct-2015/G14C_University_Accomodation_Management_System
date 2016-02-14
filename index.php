@@ -11,7 +11,7 @@ session_start();
     background-repeat: no-repeat;
 	}
 	</style>
-    <link rel="stylesheet" type="text/css" href="style.css">		
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <table width="1050px" align="center">
@@ -25,11 +25,10 @@ session_start();
         <ul>
 		<li><a href="index.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;" ><b>HOME</b></a></li>
         <li><a href="about.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>ABOUT</b></a></li>
-		<li><a href="#" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>HOSTEL</b></a></li>
-		<li><a href="admin.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>Administration Login</b></a></li>	 
+		<li><a href="admin.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>ADMINISTRATIVE LOGIN</b></a></li>
   		</ul>
         </div>
-        
+
       </td>
     </tr>
     <tr>
@@ -45,8 +44,8 @@ var bca = [
     '<img src="images/aa.jpg" width=100%><h5>University campus</h5>',
 	'<img src="images/b.jpg" width=100%><h5>University  Library</h5>',
 	'<img src="images/cc.jpg" width=100%><h5>Hostel view</h5>',
-	
-	
+
+
 ];
 // This function is triggered by the bubbleSlide() function below
 function bubbles(bi){
@@ -64,7 +63,7 @@ function bubbles(bi){
 		document.getElementById("bubblecontent").innerHTML = bca[bi];
 		//fade in the content
 		document.getElementById("bubblecontent").style.opacity = 1;
-		
+
 		}, 300);
 }
 // This function is set to run every 3 seconds(3000ms)
@@ -86,35 +85,35 @@ window.addEventListener("load", function(){
 });
 </script>
 <style>
-#bubblebox{ 
-width:100%; 
-height:550px; 
+#bubblebox{
+width:100%;
+height:550px;
 
 }
-#bubbles{ 
-width:auto; 
-margin:auto; 
-text-align:center; 
+#bubbles{
+width:auto;
+margin:auto;
+text-align:center;
 }
-#bubbles > div{ 
-display:inline-block; 
-width:10px; height:10px; 
-margin:24px 10px 0px 10px;  
-text-align:center; 
+#bubbles > div{
+display:inline-block;
+width:10px; height:10px;
+margin:24px 10px 0px 10px;
+text-align:center;
 border:1px solid black;
-border-radius:100%; 
-transition: background 1s linear 0s; 
-cursor:pointer; 
+border-radius:100%;
+transition: background 1s linear 0s;
+cursor:pointer;
 }
-#bubblecontent{ 
- 
-transition:opacity 1s linear 0s; 
+#bubblecontent{
+
+transition:opacity 1s linear 0s;
 
 }
-#bubblecontent > h5{ 
-text-align:center; 
+#bubblecontent > h5{
+text-align:center;
 
-color:#7EA800; 
+color:#7EA800;
 }
 #bubblecontent > img{
 position:relative;
@@ -131,8 +130,8 @@ height:450px;
     <div onclick="bubbles(0); clearInterval(intrvl)"; style="background:silver;"></div>
     <div onclick="bubbles(1); clearInterval(intrvl);"></div>
     <div onclick="bubbles(2); clearInterval(intrvl);"></div>
-   
-	
+
+
   </div>
   <div id="bubblecontent">
     <h5></h5>
@@ -140,7 +139,7 @@ height:450px;
   </div>
 </div>
     <!--slider end-->
-    
+
       </th>
     </tr>
     <tr>
@@ -151,26 +150,26 @@ height:450px;
 	</center>
     <center><img src="images/muuu.jpg" width="100%" height="388"></center>
     <p><center>
-   
+
       <p><strong><font size="3px" color="white">Melaka University<font></strong> <b>-</b> <font size="2px" color="white">
 	  a pioneer educational Institute of Malaysia, has been striving to provide quality higher education since 1999. Approved by International Educational Organizations, Melaka has a sprawling multi-discipline campus, world class facilities and competent faculty. Creating a benchmark in the field of education, Melaka aims to create proficient technocrats and future leaders with emphasis on overall development of personality imbibing core human values among students.','Our College  is dedicated to preparing students with the knowledge, skills and training needed for meaningful employment. Through education, we create opportunities, change lives and impact futures.</font></p>
     </center></p>
 	<?php
-		
+
 	@$opt = $_GET['option'];
 	if($opt=="")
 	{
 		error_reporting(1);
 		?>
-      
+
       </td>
 	  </tr>
-	
+
 	<tr>
       <td width="100%" style="background-color:white;" height="50">
       <center><font size="+1"><b style="color:red;"><div >Updates</div><br></b></font></center>
       	<marquee direction="left" onMouseOver="stop()" onMouseOut="start()">
-			
+
            <a href="index.php?option=news" style="text-decoration:none;color:red;"><font size="3"><b>News &nbsp;&nbsp;&nbsp;</b></font></a>
            <a href="index.php?option=notice" style="text-decoration:none;color:red;"><font size="3"><b>Notice Board &nbsp;&nbsp;&nbsp;</b></font></a>
         </marquee>
@@ -199,7 +198,7 @@ height:450px;
 		case 'notice':
 		include('notice.php');
 		break;
-		
+
 	}
 	}
 
