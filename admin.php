@@ -1,12 +1,5 @@
 <?php
-session_start();
-$host="localhost";
-$user="root";
-$password="";
-$database = "twt06";
-mysql_connect($host,$user,$password);
-
-mysql_select_db($database);
+include 'database.php';
 
 if(isset($_POST['admlogin']))
 {
@@ -20,6 +13,8 @@ if(isset($_POST['admlogin']))
 	if($row == true)
 	{
 	echo "<script> alert('Hello Admin $name')</script>";
+	$_SESSION['login'] = true;
+	header ("Location: adminindex.php");
 	}
 	else
 	{
