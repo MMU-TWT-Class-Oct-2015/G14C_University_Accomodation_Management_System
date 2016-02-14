@@ -57,7 +57,7 @@ The credentials is then cross-reference with the SQL file to verify the user's d
 
 The forth and final form is the main form (adminindex.php) where it is only accessible once the user has successfully login. In this form user brought to a menu where user can choose from the following options on the tab. This is where the user will register student to either book, check status and etc. There are 5 options (5 subset forms) in total as listed below:
 
-![Menu](http://imgur.com/r3sgVzz)
+![Menu](http://i.imgur.com/r3sgVzz.png)
 
 - Registration tab - it is used to register the student's detail and store it into the database.
 
