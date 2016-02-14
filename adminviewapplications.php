@@ -31,7 +31,7 @@ include 'database.php';
 </table>
 
 <?php
-$query = "Select * from student";
+$query = "Select * from student where student_id in (select student_id from lease)";
 $result = mysql_query($query) or die(mysql_error());
 ?>
 
@@ -60,7 +60,7 @@ while ($row = mysql_fetch_row($result))
              <td><?php echo $row[6] ?></td>
 			 <td><?php echo $row[3] ?></td>
 			 </tr>
-			 
+
 <?php
 }
 ?>
