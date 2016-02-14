@@ -1,0 +1,64 @@
+<style type="text/css" media="screen">
+
+
+#horizontalmenu ul 
+{
+padding:1; margin:1; list-style:none;
+}
+
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#footer {
+    background-color:#B8Addd;
+    color:black;
+    clear:both;
+    text-align:center;
+   padding:5px;
+}
+#nav {
+    line-height:80px;
+    background-color:black;
+    height:55px;
+    width:1030px;
+    float:left;
+    padding:5px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#section {
+    width:800px;
+    float:left;
+    padding:10px;
+    background-color:	none;
+}
+
+#horizontalmenu li
+{
+float:left;
+position:relative;
+padding-right:50;
+display:block;
+border:0px solid #CC55FF; 
+border-style:inset;
+}
+#horizontalmenu li ul
+ {
+display:none;
+position:relative;
+}
+#horizontalmenu li:hover ul{
+    display:block;
+    background:#C4C4C4;
+height:auto; width:8em; 
+}
+#horizontalmenu li ul li
+{
+    clear:both;
+border-style:none;}
+</style>

@@ -5,42 +5,13 @@ session_start();
 <head>
 <title>School Web Project</title>
     <style type="text/css" media="screen">
-
 .image {
-	background:url(TM.jpg);
+	background:url(images/TM.jpg);
 	background-size: 1050px 115px;
     background-repeat: no-repeat;
-	
 	}
-#horizontalmenu ul 
-{
-padding:1; margin:1; list-style:none;
-}
-
-#horizontalmenu li
-{
-float:left;
- position:relative;
-padding-right:50;
- display:block;
-border:0px solid #CC55FF; 
-border-style:inset;
-}
-#horizontalmenu li ul
- {
-display:none;
-position:relative;
-}
-#horizontalmenu li:hover ul{
-    display:block;
-    background:#C4C4C4;
-height:auto; width:8em; 
-}
-#horizontalmenu li ul li
-{
-    clear:both;
-border-style:none;}
-</style>	
+	</style>
+    <link rel="stylesheet" type="text/css" href="style.css">		
 </head>
 <body>
 <table width="1050px" align="center">
@@ -53,18 +24,11 @@ border-style:none;}
       	<div id="horizontalmenu">
         <ul>
 		<li><a href="index.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;" ><b>HOME</b></a></li>
-        <li><a href="index.php?option=about" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>ABOUT</b></a></li>
-		<li><a href="#" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>HOSTEL</b></a>
-        	<ul style="width:100%">
-				 <li style="width:100%"><a href="index.php?option=login" target="_blank" onMouseOut="this.style.color='#FFFFFF'" onMouseOver="this.style.color='blue'" style="color:white; text-decoration:none;">Administration Login</a></li>
-			 </ul>
-              </li>
-		 </ul>
-                 
-            </li>
-            
-        </ul>
-</div>
+        <li><a href="about.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>ABOUT</b></a></li>
+		<li><a href="#" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>HOSTEL</b></a></li>
+		<li><a href="admin.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>Administration Login</b></a></li>	 
+  		</ul>
+        </div>
         
       </td>
     </tr>
@@ -78,9 +42,9 @@ border-style:none;}
 var ba, bi=0, intrvl;
 // bca - Bubble Content Array. Put your content here.
 var bca = [
-    '<img src="aa.jpg" width=100%><h5>University campus</h5>',
-	'<img src="b.jpg" width=100%><h5>University  Library</h5>',
-	'<img src="cc.jpg" width=100%><h5>Hostel view</h5>',
+    '<img src="images/aa.jpg" width=100%><h5>University campus</h5>',
+	'<img src="images/b.jpg" width=100%><h5>University  Library</h5>',
+	'<img src="images/cc.jpg" width=100%><h5>Hostel view</h5>',
 	
 	
 ];
@@ -185,7 +149,7 @@ height:450px;
 	  <h2><b><font size="+1" color="white">Melaka University
 	    </font></b></h2>
 	</center>
-    <center><img src="muuu.jpg" width="100%" height="388"></center>
+    <center><img src="images/muuu.jpg" width="100%" height="388"></center>
     <p><center>
    
       <p><strong><font size="3px" color="white">Melaka University<font></strong> <b>-</b> <font size="2px" color="white">
