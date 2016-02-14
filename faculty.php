@@ -48,7 +48,7 @@ session_start();
     <a href="hostel.php">Hostel of MMU</a>
 </div>
 
-<div id="section">
+
 <h1 style="text-align:center;">Faculties in MMU</h1>
 <p> </p>
 <ol>
@@ -85,7 +85,7 @@ session_start();
 
 
 
-</div>
+
 <div id="footer"><b>
 &copy;copyright by Melaka.com</b>
 </div>
