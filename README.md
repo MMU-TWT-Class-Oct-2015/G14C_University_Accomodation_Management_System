@@ -69,26 +69,27 @@ The forth and final form is the main form (adminindex.php) where it is only acce
 
 - Check Status tab - it is used to check status of available student's that have booked a room in MMU's hostel. It is searched via a lease number that is provided after booking a room.
 
-![Status](http://i.imgur.com/4yqWwOU.png)
+![Checking Status](http://i.imgur.com/4yqWwOU.png)
 
 - Result of Check Status tab
 
 ![Result Status](http://i.imgur.com/kASSkG1.png)
 
 - View Application tab - it is used to show all available student's that have booked a room with MMU's hostel accomodation system.
+- After checking the status , we can click the "Update Status to Approve" button to update the status.
 
 ![View Application](http://i.imgur.com/9Nfg51r.png)
 
 
-- Logout tab - The logout tab will destroy any session that have been create in the admin page, then redirect the user back to the admin login page. When the user is not login, they cannot access the page that require to login, it will automatic kick the user back to the admin login page if the user try to paste the URL of some page that require login. 
+- Logout tab - The logout tab will destroy any session that have been create in the admin page, then redirect the user back to the admin login page. When the user is not login, they cannot access the page that require to login, it will automatic kick the user back to the admin login page if the user try to paste the URL of some page that require login.
 
 
 ##### CSS
 The Css use in the system include Internal Style and External Style.
-Internal Css is use in the same page of the PHP file. 
+Internal Css is use in the same page of the PHP file.
 
 
-##### Internal CSS 
+##### Internal CSS
 -Banner Image
 This is a internal CSS code we use to adjust and design our banner for the website
 
@@ -100,10 +101,3 @@ This is a internal CSS code we use to adjust and design our banner for the websi
 -Next we have the External CSS, most of the project us use External CSS to design. External CSS is saparated from the PHP file, the code is in another file name .css , and you need to implement this .css file into your PHP file.
 
 wait, later I continue with the image.
-
-
-
-
-
-
-
