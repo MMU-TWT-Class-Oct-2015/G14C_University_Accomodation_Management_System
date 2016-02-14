@@ -9,10 +9,10 @@ session_start();
 	background:url(images/TM.jpg);
 	background-size: 1050px 115px;
     background-repeat: no-repeat;
-	
+
 	}
 	</style>
-    <link rel="stylesheet" type="text/css" href="style.css">	
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <table width="1050px" align="center" border="0">
@@ -26,23 +26,26 @@ session_start();
         <ul>
 		<li><a href="index.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;" ><b>HOME</b></a></li>
         <li><a href="about.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>ABOUT</b></a></li>
-		<li><a href="#" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>HOSTEL</b></a></li>
-		<li><a href="admin.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>Administration Login</b></a></li>	 
-		</ul>  
-		</div>    
+		<li><a href="admin.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>ADMINISTRATIVE LOGIN</b></a></li>
+		</ul>
+		</div>
     </td>
     </tr>
 	<tr>
 	<td>
-	
+
 	<div id="header">
 <h1>About Us</h1>
 </div>
-	
+
 <div id="nav">
-  <a href="about.php">Chancellor of MMU</a>&nbsp&nbsp&nbsp
+	<a href="about.php">Chancellor of MMU</a>&nbsp&nbsp&nbsp
+
   <a href="facilities.php">Facilities of MMU</a>&nbsp&nbsp&nbsp
-  <a href="faculty.php">Faculties of MMU</a>
+
+  <a href="faculty.php">Faculties of MMU</a>&nbsp&nbsp&nbsp
+
+  <a href="hostel.php">Hostel of MMU</a>
 </div>
 
 <div id="section">
@@ -65,12 +68,12 @@ session_start();
 </div>
 	</td>
 	</tr>
-    
-    
-	
-   
-   
-	
+
+
+
+
+
+
 </tbody>
 </table>
 

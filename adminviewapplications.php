@@ -11,6 +11,9 @@ include 'database.php';
     background-repeat: no-repeat;
 
 	}
+	
+	
+	
 	</style>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -18,7 +21,7 @@ include 'database.php';
 <table width="1050px" align="center" border="0">
   <tbody class="bg">
     <tr class="image">
-      <th height="115" colspan="2" >
+      <td height="115" colspan="2" >
     </tr>
 	<tr>
     <?php include 'adminheader.php'; ?>
@@ -30,9 +33,25 @@ include 'database.php';
 <?php
 $query = "Select * from student";
 $result = mysql_query($query) or die(mysql_error());
+?>
+
+<br>
+<table width="1050px" align="center" border="0">
+<tr>
+<th >Student ID</th>
+<th >First Name</th>
+<th >Last Name</th>
+<th >Date Of Birth</th>
+<th >Category</th>
+<th >Course ID</th>
+<th >Address</th>
+</tr>
+
+<?php
 while ($row = mysql_fetch_row($result))
 {
 ?>
+<<<<<<< HEAD
 
              <table>
              <tr><td class="bold">Student ID:</td><td><?php echo $row[0] ?></td></tr>
@@ -44,8 +63,22 @@ while ($row = mysql_fetch_row($result))
 			 <tr><td class="bold">Address:</td><td><?php echo $row[6] ?></td></tr>
 		 </table><hr>
 <?php
+=======
+             <tr align="center">        
+             <td><?php echo $row[0] ?></td>
+             <td><?php echo $row[1] ?></td>
+             <td><?php echo $row[2] ?></td>
+			 <td><?php echo $row[4] ?></td>
+             <td><?php echo $row[5] ?></td>
+             <td><?php echo $row[6] ?></td>
+			 <td><?php echo $row[3] ?></td>
+			 </tr>
+			 
+<?php  
+>>>>>>> 8f4fe1577f239888f8f4ed070be3234a8027bad1
 }
 ?>
 
+</table>
 </body>
 </html>
