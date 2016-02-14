@@ -38,6 +38,7 @@ $result = mysql_query($query) or die(mysql_error());
 <br>
 <table width="1050px" align="center" border="0">
 <tr>
+<th >Number</th>
 <th >Student ID</th>
 <th >First Name</th>
 <th >Last Name</th>
@@ -48,10 +49,12 @@ $result = mysql_query($query) or die(mysql_error());
 </tr>
 
 <?php
+$num=1;
 while ($row = mysql_fetch_row($result))
 {
 ?>
              <tr align="center">
+			 <td><?php echo $num; ?></td>
              <td><?php echo $row[0] ?></td>
              <td><?php echo $row[1] ?></td>
              <td><?php echo $row[2] ?></td>
@@ -62,6 +65,7 @@ while ($row = mysql_fetch_row($result))
 			 </tr>
 
 <?php
+$num++;
 }
 ?>
 

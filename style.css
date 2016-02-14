@@ -35,10 +35,6 @@ table {
     border-collapse: collapse;  
 }
 
- th {
-    background-color: #4CAF50;
-    color: white;
-}
 
 #section {
     width:800px;
