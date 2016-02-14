@@ -38,7 +38,7 @@ if (isset($_POST['bookroom'])){
 <table width="1050px" align="center" border="0">
   <tbody class="bg">
     <tr class="image">
-      <th height="115" colspan="2" >
+      <td height="115" colspan="2" >
     </tr>
 	<tr>
     <?php include 'adminheader.php'; ?>
@@ -46,9 +46,9 @@ if (isset($_POST['bookroom'])){
 	
 </tbody>
 </table>
-
+<br>
 <form name="booking" method="POST" action="">
-<table width="1050px" align="center" border="0">
+<table width="400px" align="center" border="0">
                   <tr><td class="bold">Least num</td><td><input type=text name=lnumber></td></tr>
                   <tr><td class="bold">Start Date</td><td><input type=date name=sdate></td></tr>
                   <tr><td class="bold">End Date</td><td><input type=date name=edate></td></tr>

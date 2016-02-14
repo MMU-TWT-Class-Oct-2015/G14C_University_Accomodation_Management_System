@@ -18,7 +18,7 @@ session_start();
 <table width="1050px" align="center" border="0">
   <tbody class="bg">
     <tr class="image">
-      <th height="115" colspan="2" >
+      <td height="115" colspan="2" >
     </tr>
 	<tr>
     <?php include 'adminheader.php'; ?>

@@ -40,7 +40,7 @@ if(isset($_POST['submitReg'])) {
 <table width="1050px" align="center" border="0">
   <tbody class="bg">
     <tr class="image">
-      <th height="115" colspan="2" >
+      <td height="115" colspan="2" >
     </tr>
 	<tr>
     <?php include 'adminheader.php'; ?>
@@ -48,9 +48,9 @@ if(isset($_POST['submitReg'])) {
 	
 </tbody>
 </table>
-
+<br>
 <form name="registerstu" method="POST" action="">
-<table width="1050px" align="center" border="0">
+<table width="400px" align="center" border="0">
                   <tr><td class="bold">Student ID:</td><td><input type="text" name="sid"></td></tr>
                   <tr><td class="bold">First Name:</td><td><input type="text" name="fname"></td></tr>
                   <tr><td class="bold">Last Name:</td><td><input type="text" name="lname"></td></tr>
