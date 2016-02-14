@@ -47,7 +47,7 @@ end_date date,
 status varchar(10),
 student_id int references student,
 place_number int references place,
-staff_id int references staff);
+staff_id varchar(20) references staff);
 
 insert into course (course_id, course_name, leader, department) values
 ('BA', 'Business Administrative', 'Mr. Lee', 'FOB'),
@@ -112,4 +112,3 @@ insert into place (place_number, rent_rate, hall_number, room_number) values
 
 insert into staff values
 ('admin123','abc123');
-
