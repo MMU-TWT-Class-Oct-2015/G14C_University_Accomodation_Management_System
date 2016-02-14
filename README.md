@@ -45,7 +45,6 @@ The second form which is the about page (about.php) is also a subset to the foll
 The third form is the login form where the end user of the system is to login into the main form which is the form used for registration etc.
 To login, the user is required to key in their credentials (username, password)
 
-
 ![Login](http://i.imgur.com/I1jkgP1.jpg)
 
 
@@ -81,6 +80,30 @@ The forth and final form is the main form (adminindex.php) where it is only acce
 ![View Application](http://i.imgur.com/9Nfg51r.png)
 
 
-- Logout tab - The logout tab does as it says. It logs out the user from the main form.
+- Logout tab - The logout tab will destroy any session that have been create in the admin page, then redirect the user back to the admin login page. When the user is not login, they cannot access the page that require to login, it will automatic kick the user back to the admin login page if the user try to paste the URL of some page that require login. 
 
----
+
+##### CSS
+The Css use in the system include Internal Style and External Style.
+Internal Css is use in the same page of the PHP file. 
+
+
+##### Internal CSS 
+-Banner Image
+This is a internal CSS code we use to adjust and design our banner for the website
+
+![Internal CSS](http://i.imgur.com/1hzemmI.png)
+
+![Internal CSS](http://i.imgur.com/o90z9K2.png)
+
+##### External CSS
+-Next we have the External CSS, most of the project us use External CSS to design. External CSS is saparated from the PHP file, the code is in another file name .css , and you need to implement this .css file into your PHP file.
+
+wait, later I continue with the image.
+
+
+
+
+
+
+
