@@ -26,8 +26,7 @@ There are 7 php forms in total for our system. Where there is 4 main forms and 3
 
 >1. The first form being the homepage (index.php) In the homepage there is 3 navigation tab. The first allows the user to either click on the homepage being the current page, or navaigate to the about page or the admin login where the end user of the system is allowed to key in their credentials and accomodate student in getting a room with Melaka University.
 
-![Homepage](https://raw.github.com/tesh5581/G14C_University_Accomodation_Management_System/tree/master/Images/homepage.jpg)
-[![Homepage](https://raw.github.com/tesh5581/G14C_University_Accomodation_Management_System/tree/master/Images/homepage.jpg)]
+![Homepage](http://i.imgur.com/dMwjKwt.jpg)
 
 >2. The second form which is the about page (about.php) is also a subset to the following three other forms which are the faculty tab (faculty.php), facilites tab (facilities.php), hostel tab (hostel.php)
 >- about.php - contains the details about the current chancellor of Melaka University.
