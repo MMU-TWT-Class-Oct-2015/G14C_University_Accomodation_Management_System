@@ -37,7 +37,7 @@ $result = mysql_query($query) or die(mysql_error());
 
 <br>
 <table width="1050px" align="center" border="0">
-<tr>
+<tr bgcolor="#8181F7">
 <th >Number</th>
 <th >Student ID</th>
 <th >First Name</th>
