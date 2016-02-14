@@ -6,7 +6,7 @@ if(isset($_POST['admlogin']))
 	$name = $_POST['admname'];
 	$pass = $_POST['admpass'];
 	$_SESSION['admin']=$name;
-	$p = $pass;
+	$p = md5($pass);
 	$q = "SELECT * FROM staff WHERE staff_id='$name' AND password='$p'";
 	$cq = mysql_query($q);
 	$row = mysql_num_rows($cq);
