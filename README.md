@@ -16,7 +16,7 @@ The following software stated below will be needed to be installed into our syst
 The text editors are needed to be able to write the code for our project which is the University Accomodation Management System. You can use any of your preffered text editor but mainly 4 of us used either [Notepad++](https://notepad-plus-plus.org/)  or the highly popular [Atom.io](https://atom.io/). We can also use our notepad to write down the programming language.  
 
 ##### Web Browser
-Web Broswer is used to view the design of our system and interact with it. On the other hand web broswer is also used to open the Xampp interface and also to start the SQL. A web browser can be used based on our preference either Google Chrome, Mozilla Firefox, Opera, Safari or etc.
+Web Browser is used to view the design of our system and interact with it. On the other hand web broswer is also used to open the Xampp interface and also to start the SQL. A web browser can be used based on our preference either Google Chrome, Mozilla Firefox, Opera, Safari or etc.
 
 ---
 ## **Operating the system**
@@ -34,17 +34,8 @@ There are 13 php forms in total for our system.
 ![About](http://i.imgur.com/Yr9ocsQ.jpg)
 
 >- facilities.php - contains the details about the facilities available in Multimedia University.
-
-![Facilities](http://i.imgur.com/dGD6arJ.jpg)
-
 >- faculties.php - contains the details about the faculties available in Multimedia University.
-
-![Faculties](http://i.imgur.com/ZsMxbwc.jpg)
-
 >- hostel.php - contains the details about the hostels in Multimedia University.
-
-![Hostel](http://i.imgur.com/GTO6Hxs.jpg)
-
 >3. The third form is the login form where the end user of the system is to login into the main form which is the form used for registration etc.
 > To login, the user is required to key in their credentials (username, password)
 
