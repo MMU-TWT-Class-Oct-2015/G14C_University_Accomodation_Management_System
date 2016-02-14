@@ -69,41 +69,67 @@ The forth and final form is the main form (adminindex.php) where it is only acce
 
 - Check Status tab - it is used to check status of available student's that have booked a room in MMU's hostel. It is searched via a lease number that is provided after booking a room.
 
-![Status](http://i.imgur.com/4yqWwOU.png)
+![Checking Status](http://i.imgur.com/4yqWwOU.png)
 
 - Result of Check Status tab
 
 ![Result Status](http://i.imgur.com/kASSkG1.png)
 
 - View Application tab - it is used to show all available student's that have booked a room with MMU's hostel accomodation system.
+- After checking the status , we can click the "Update Status to Approve" button to update the status.
 
 ![View Application](http://i.imgur.com/9Nfg51r.png)
 
 
-- Logout tab - The logout tab will destroy any session that have been create in the admin page, then redirect the user back to the admin login page. When the user is not login, they cannot access the page that require to login, it will automatic kick the user back to the admin login page if the user try to paste the URL of some page that require login. 
+- Logout tab - The logout tab will destroy any session that have been create in the admin page, then redirect the user back to the admin login page. When the user is not login, they cannot access the page that require to login, it will automatic kick the user back to the admin login page if the user try to paste the URL of some page that require login.
 
+---
 
 ##### CSS
-The Css use in the system include Internal Style and External Style.
-Internal Css is use in the same page of the PHP file. 
+- The Css use in the system include Inline Style, Internal Style and External Style.
+- Internal Css is use in the same page of the PHP file.
 
 
-##### Internal CSS 
--Banner Image
-This is a internal CSS code we use to adjust and design our banner for the website
+##### Internal CSS
+- Banner Image , This is a internal CSS code we use to adjust and design our banner for the website
 
 ![Internal CSS](http://i.imgur.com/1hzemmI.png)
 
 ![Internal CSS](http://i.imgur.com/o90z9K2.png)
 
 ##### External CSS
--Next we have the External CSS, most of the project us use External CSS to design. External CSS is saparated from the PHP file, the code is in another file name .css , and you need to implement this .css file into your PHP file.
+- Next we have the External CSS, most of the project us use External CSS to design. External CSS is saparated from the PHP file, the code is in another file name style.css , and you need to implement this style.css file into your PHP file.
 
-wait, later I continue with the image.
+- This is a External CSS code we use for designing the Admin Menu Bar
+![Admin Menu CSS](http://i.imgur.com/niogD0K.png)
 
+- This is the result from the External CSS
+![Admin Menu Bar](http://i.imgur.com/eqIpMQF.png)
 
+- This is the footer CSS
+![footer css](http://i.imgur.com/Xa68siN.png)
 
+- This is the result of footer from the External CSS
+![footer bar](http://i.imgur.com/xgytZcR.png)
 
+- This is a group css where all the name of the same name will be effected at the same time. It is very easy to use these because we only need to change one css line in the style.css and all the different PHP design will change together, this will safe alots of time in changing page per page.
 
+- Css that group together with the id , name sections
+![section example](http://i.imgur.com/YXxD1jd.png)
 
+![section example2](http://i.imgur.com/2UAmGaM.png)
+
+- External CSS that use to change all the design of the group id name section in all the php file
+![section css](http://i.imgur.com/fWn74ZP.png)
+
+##### Inline CSS Style
+- Lastly is the Inline CSS style , where it is implement inside the line of the coding of anything.
+
+- This is a Inline CSS style for moving the text to center
+![inline css](http://i.imgur.com/ypqb72Z.png)
+
+- This is the result of the inline CSS
+![inline css result](http://i.imgur.com/QCHU1Bi.png)
+
+---
 
