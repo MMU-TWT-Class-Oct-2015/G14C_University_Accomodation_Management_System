@@ -2,7 +2,7 @@
 include 'database.php';
 
 if (isset($_POST['bookroom'])){
-	
+
 	$lnumber = $_POST['lnumber'];
 	$sdate = $_POST['sdate'];
 	$edate = $_POST['edate'];
@@ -14,7 +14,7 @@ if (isset($_POST['bookroom'])){
  $query = "INSERT INTO lease VALUES ('$lnumber','$sdate', '$edate', '$status', '$sid', '$pnum', '$stid')";
          mysql_query($query) or die(mysql_error());
 
-	
+
 }
 
 
@@ -29,10 +29,10 @@ if (isset($_POST['bookroom'])){
 	background:url(images/TM.jpg);
 	background-size: 1050px 115px;
     background-repeat: no-repeat;
-	
+
 	}
 	</style>
-    <link rel="stylesheet" type="text/css" href="style.css">	
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <table width="1050px" align="center" border="0">
@@ -43,19 +43,19 @@ if (isset($_POST['bookroom'])){
 	<tr>
     <?php include 'adminheader.php'; ?>
     </tr>
-	
+
 </tbody>
 </table>
 
 <form name="booking" method="POST" action="">
 <table width="1050px" align="center" border="0">
-                  <tr><td class="bold">Least num</td><td><input type=text name=lnumber></td></tr>
+                  <tr><td class="bold">Lease num</td><td><input type=text name=lnumber></td></tr>
                   <tr><td class="bold">Start Date</td><td><input type=date name=sdate></td></tr>
                   <tr><td class="bold">End Date</td><td><input type=date name=edate></td></tr>
                   <tr valign=top><td class="bold">Current Status</td>
 				  <td><select name=status>
-                  <option value="wait">Waiting</option>
-                  <option value="rent">Rent</option>
+                  <option value="wait">Pending</option>
+                  <option value="rent">Approve</option>
                  </select>
                   </td></tr>
 				  <tr><td class="bold">Student ID</td><td><input type=text name=sid></td></tr>

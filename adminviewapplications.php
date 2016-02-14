@@ -9,10 +9,10 @@ include 'database.php';
 	background:url(images/TM.jpg);
 	background-size: 1050px 115px;
     background-repeat: no-repeat;
-	
+
 	}
 	</style>
-    <link rel="stylesheet" type="text/css" href="style.css">	
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <table width="1050px" align="center" border="0">
@@ -27,13 +27,13 @@ include 'database.php';
 </tbody>
 </table>
 
-<?php 
+<?php
 $query = "Select * from student";
 $result = mysql_query($query) or die(mysql_error());
 while ($row = mysql_fetch_row($result))
 {
 ?>
-             
+
              <table>
              <tr><td class="bold">Student ID:</td><td><?php echo $row[0] ?></td></tr>
              <tr><td class="bold">First Name:</td><td><?php echo $row[1] ?></td></tr>
@@ -42,8 +42,8 @@ while ($row = mysql_fetch_row($result))
               <tr><td class="bold">Category:</td><td><?php echo $row[4] ?></td><td>
              <tr><td class="bold">Course ID:</td><td><?php echo $row[5] ?></td></tr>
 			 <tr><td class="bold">Address:</td><td><?php echo $row[6] ?></td></tr>
-			 </table><hr>
-<?php  
+		 </table><hr>
+<?php
 }
 ?>
 

@@ -10,10 +10,10 @@ include 'database.php';
 	background:url(images/TM.jpg);
 	background-size: 1050px 115px;
     background-repeat: no-repeat;
-	
+
 	}
 	</style>
-    <link rel="stylesheet" type="text/css" href="style.css">	
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <table width="1050px" align="center" border="0">
@@ -23,8 +23,8 @@ include 'database.php';
     </tr>
 	<tr>
     <?php include 'adminheader.php'; ?>
-    </tr> 
-	
+    </tr>
+
 </tbody>
 </table>
 <form name="check" method="POST" action="">
@@ -36,30 +36,38 @@ include 'database.php';
 <?php
 
 if (isset($_POST['submitCheck'])) {
-	
+
 	$lnumber = $_POST['lnumber'];
 
 $query = "select * from lease where lease_number ='$lnumber'";
 $result = mysql_query($query) or die(mysql_error());
 
  while ($row = mysql_fetch_row($result)){
-?>			 
-             
-             <h1>Reservation Status Checking</h1>
-             
-             <br><table>
-             <tr><td class="bold">Lease Number:</td><td><?php echo $row[0] ?></td></tr>
-             <tr><td class="bold">Student ID:</td><td><?php echo $row[4] ?></td></tr>
-             <tr><td class="bold">Place Number:</td><td><?php echo $row[5] ?></td></tr>
-             <tr><td class="bold">Start Date:</td><td><?php echo $row[1] ?></td></tr>
-             <tr><td class="bold">End Date:</td><td><?php echo $row[2] ?></td></tr>
-             <tr><td class="bold">Status:</td><td><?php echo $row[3] ?></td><td><input name="statusUpdate" type=submit value="Update"></td></tr>
-             <table><hr>
-<?php
+
+
+             echo "<h1>Reservation Status Checking</h1>
+						 <br><table>
+						 <tr><td class=\"bold\">Lease Number:</td><td>$row[0]<input type=hidden name=update4 value=$row[0]></td></tr>
+						 <tr><td class=\"bold\">Student ID:</td><td>$row[4]</td></tr>
+						 <tr><td class=\"bold\">Place Number:</td><td>$row[5]</td></tr>
+						 <tr><td class=\"bold\">Start Date:</td><td>$row[1]</td></tr>
+						 <tr><td class=\"bold\">End Date:</td><td>$row[2]</td></tr>
+						 <tr><td class=\"bold\">Status:</td><td>$row[3]</td><td><button name=\"statusUpdate\"  >Update Status to Approve</button></td></tr>
+						 <table><hr>";
 }
+}
+elseif (isset($_POST['statusUpdate'])) {
+	if (!$connect = mysql_connect("localhost", "root", "")) {
+		die(mysql_error());
+	}
+	if (!mysql_select_db("TWT06", $connect))
+	 die(mysql_error());
+ $query = "UPDATE `lease` SET `status` = 'Approve' WHERE lease_number ='$update4'";
+ $result = mysql_query($query) or die(mysql_error());
+
+ echo "Update Done!<br>";
 }
 ?>
-
 
 </body>
 </html>

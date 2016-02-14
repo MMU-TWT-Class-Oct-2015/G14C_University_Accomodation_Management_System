@@ -109,7 +109,7 @@
 
            $query = "select * from lease where lease_number='" . $_POST['lnumber'] . "'";
            $result = mysql_query($query) or die(mysql_error());
-$body="";
+           $body="";
            while ($row = mysql_fetch_row($result)){
              $body = "
              <h1>Reservation Status Checking</h1>
@@ -118,13 +118,14 @@ $body="";
              <tr><td></td><td><input name=\"submitCheck\" type=submit value=\"Submit!\">&nbsp;&nbsp;<input type=reset value=Clear></td></tr>
              </table>
              <br><table>
-             <tr><td class=\"bold\">Lease Number:</td><td>$row[0]</td></tr>
+             <tr><td class=\"bold\">Lease Number:</td><td>$row[0]<input type=hidden name=update4 value=$row[0]></td></tr>
              <tr><td class=\"bold\">Student ID:</td><td>$row[4]</td></tr>
              <tr><td class=\"bold\">Place Number:</td><td>$row[5]</td></tr>
              <tr><td class=\"bold\">Start Date:</td><td>$row[1]</td></tr>
              <tr><td class=\"bold\">End Date:</td><td>$row[2]</td></tr>
-             <tr><td class=\"bold\">Status:</td><td>$row[3]</td><td><input name=\"statusUpdate\" type=submit value=\"Update\"></td></tr>
+             <tr><td class=\"bold\">Status:</td><td>$row[3]</td><td><button name=\"statusUpdate\"  >Update Status to Approve</button></td></tr>
              <table><hr>";
+
          }
          }
 
@@ -138,7 +139,7 @@ $body="";
          mysql_query($query) or die(mysql_error());
 
          $body = "Booking Done!<br>";
-         
+
        }
 	   }
        else if (isset($_POST['button4'])){
@@ -163,13 +164,27 @@ $body="";
 		   }
 		   }
 	   }
-	   
-        else if (isset ($_POST['buttonlogout'])) { 
+
+        else if (isset ($_POST['buttonlogout'])) {
   session_start();
    unset($_SESSION['admin']);
     header('location:index.php');
 
 
+       }
+       else if (isset($_POST['statusUpdate'])) {
+         if (!$connect = mysql_connect("localhost", "root", "")) {
+           die(mysql_error());
+         }
+         if (!mysql_select_db("TWT06", $connect))
+          die(mysql_error());
+       	$query = "UPDATE `lease` SET `status` = 'Approve' WHERE lease_number ='$update4'";
+       	$result = mysql_query($query) or die(mysql_error());
+
+        $body = "Update Done!<br>";
+       }
+       else {
+         $body = "<h1>Welcome to MMU Accomodation Online System</h1>";
        }
      ?>
   </head>
