@@ -62,19 +62,24 @@ The forth and final form is the main form (adminindex.php) where it is only acce
 
 - Registration tab - it is used to register the student's detail and store it into the database.
 
-![Registration](http://i.imgur.com/gB5ecYe.jpg)
+![Registration](http://i.imgur.com/hkbx56t.png)
 
 - Book Room tab - it is used to book a room of an available student of Multimedia University.
 
-![Book Room](http://i.imgur.com/1e9q4ha.jpg)
+![Book Room](http://i.imgur.com/4t0FEwb.png)
 
 - Check Status tab - it is used to check status of available student's that have booked a room in MMU's hostel. It is searched via a lease number that is provided after booking a room.
 
-![Status](http://i.imgur.com/Tul5RJU.jpg)
+![Status](http://i.imgur.com/4yqWwOU.png)
+
+- Result of Check Status tab
+
+![Result Status](http://i.imgur.com/kASSkG1.png)
 
 - View Application tab - it is used to show all available student's that have booked a room with MMU's hostel accomodation system.
 
-![View Application](http://i.imgur.com/5VErrjB.jpg)
+![View Application](http://i.imgur.com/9Nfg51r.png)
+
 
 - Logout tab - The logout tab does as it says. It logs out the user from the main form.
 
