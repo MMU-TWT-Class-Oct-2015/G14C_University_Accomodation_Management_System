@@ -1,15 +1,20 @@
 <?php
 session_start();
-$con = mysql_connect("localhost","root","technology","login");
+$host="localhost";
+$user="root";
+$password="";
+$database = "twt06";
+mysql_connect($host,$user,$password);
 
-mysql_select_db("login",$con);
+mysql_select_db($database);
+
 if(isset($_POST['admlogin']))
 {
 	$name = $_POST['admname'];
 	$pass = $_POST['admpass'];
 	$_SESSION['admin']=$name;
-	$p = md5($pass);
-	$q = "SELECT * FROM admin WHERE username='$name' AND password='$p'";
+	$p = $pass;
+	$q = "SELECT * FROM staff WHERE staff_id='$name' AND password='$p'";
 	$cq = mysql_query($q);
 	$row = mysql_num_rows($cq);
 	if($row == true)
@@ -22,6 +27,10 @@ if(isset($_POST['admlogin']))
 	}
 }
 ?>
+<html>
+<head><title>Admin Login</title>
+</head>
+<body>
 <div align="center">
 <form method="post">
 <table width="1067" height="493" border="1">
@@ -43,3 +52,5 @@ if(isset($_POST['admlogin']))
 </table>
 </form>
 </div>
+</body>
+</html>
