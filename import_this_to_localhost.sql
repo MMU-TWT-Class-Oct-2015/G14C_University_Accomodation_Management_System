@@ -21,7 +21,8 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
-
+CREATE Database TWT06;
+use TWT06;
 --
 -- Table structure for table `course`
 --
@@ -99,12 +100,8 @@ CREATE TABLE `lease` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `lease`
---
 
-INSERT INTO `lease` (`lease_number`, `start_date`, `end_date`, `status`, `student_id`, `place_number`, `staff_id`) VALUES
-('123', '2016-02-01', '2016-02-29', 'Approve', 1141125063, 1221, '1221334'),
-('2345', '2016-02-01', '2016-02-29', 'wait', 1141327308, 1033, '1221334');
+
 
 -- --------------------------------------------------------
 
@@ -201,13 +198,8 @@ CREATE TABLE `student` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `student`
---
 
-INSERT INTO `student` (`student_id`, `fname`, `lname`, `address`, `dob`, `category`, `course_id`) VALUES
-(1141125063, 'Ng', 'Tian Ann', '109-M,Jalan Mayang , melaka', '1992-07-18', 'PG', 'ST'),
-(1141327308, 'Louis', 'Lee', 'Jalan melaka', '1993-06-30', '2UG', 'ITM'),
-(1141333333, 'John', 'Tan', 'jalan dahlia', '1993-02-05', '1UG', 'AI');
+
 
 --
 -- Indexes for dumped tables
