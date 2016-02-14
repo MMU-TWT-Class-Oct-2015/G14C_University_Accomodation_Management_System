@@ -14,7 +14,8 @@ if (isset($_POST['bookroom'])){
  $query = "INSERT INTO lease VALUES ('$lnumber','$sdate', '$edate', '$status', '$sid', '$pnum', '$stid')";
          mysql_query($query) or die(mysql_error());
 
-
+				 $message = "Booked Sucessfully";
+				 echo "<script type='text/javascript'>alert('$message');</script>";
 }
 
 
@@ -54,8 +55,8 @@ if (isset($_POST['bookroom'])){
                   <tr><td class="bold">End Date</td><td><input type=date name=edate></td></tr>
                   <tr valign=top><td class="bold">Current Status</td>
 				  <td><select name=status>
-                  <option value="wait">Pending</option>
-                  <option value="rent">Approve</option>
+                  <option value="Pending">Pending</option>
+                  <option value="Approve">Approve</option>
                  </select>
                   </td></tr>
 				  <tr><td class="bold">Student ID</td><td><input type=text name=sid></td></tr>
