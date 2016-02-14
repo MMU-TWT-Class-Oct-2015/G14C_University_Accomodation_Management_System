@@ -24,6 +24,8 @@ Web Broswer is used to view the design of our system and interact with it. On th
 There are 7 php forms in total for our system. Where there is 4 main forms and 3 subset forms of a single form.
 
 >1. The first form being the homepage (index.php) In the homepage there is 3 navigation tab. The first allows the user to either click on the homepage being the current page, or navaigate to the about page or the admin login where the end user of the system is allowed to key in their credentials and accomodate student in getting a room with Melaka University.
+![Homepage](https://github.com/tesh5581/G14C_University_Accomodation_Management_System/tree/master/Images/homepage.jpg)
+
 
 >2. The second form which is the about page (about.php) is also a subset to the following three other forms which are the faculty tab (faculty.php), facilites tab (facilities.php), hostel tab (hostel.php)
 >- about.php - contains the details about the current chancellor of Melaka University.
@@ -31,7 +33,7 @@ There are 7 php forms in total for our system. Where there is 4 main forms and 3
 >- faculties.php - contains the details about the faculties available in Melaka University.
 >- hostel.php - contains the details about the hostels in Melaka University.
 
->3. The third form is the login form where the end user of the system is to login into the main form which is the form used for registration etc. 
+>3. The third form is the login form where the end user of the system is to login into the main form which is the form used for registration etc.
 > To login, the user is required to key in their credentials (username, password)
 . The credentials is then cross-reference with the SQL file to verify the user's details. If it is succesful, user is then able to access the main form.
 
