@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,6 +18,7 @@
        $viewApplication= "<button name=\"button4\">View Applications</button>";
        $logout= "<button name=\"buttonlogout\">Logout</button>";
        $btnback="<button name=\"btnback\" onclick = \"'window.location.reload()'\" >Back</button>";
+	   extract($_POST);
 
 
        $menu = $buttonReg.$buttonbook.$viewLease.$viewApplication.$logout;
@@ -43,24 +45,19 @@
        else if (isset($_POST['button2'])){
          $body = '<h1>Accommodation Registration</h1>
                   <table>
-                  <tr><td width=20% class="bold">Name:</td><td><input type=text name=name></td></tr>
-                  <tr><td class="bold">Tel. No:</td><td><input type=text name=tel></td></tr>
-                  <tr><td class="bold">Email:</td><td><input type=text name=email></td></tr>
-                  <tr valign=top><td class="bold">Type of Position Preferred:</td><td>
-                  <select name=position>
-                  <option value=Management>Management</a>
-                  <option value=Technical>Technical</a>
-                  <option value=Financial>Financial</a>
-                  <option value=Clerical>Clerical</a>
-                  </select>
+                  <tr><td class="bold">Least num</td><td><input type=text name=lnumber></td></tr>
+                  <tr><td class="bold">Start Date</td><td><input type=date name=sdate></td></tr>
+                  <tr><td class="bold">End Date</td><td><input type=date name=edate></td></tr>
+                  <tr valign=top><td class="bold">Current Status</td>
+				  <td><select name=status>
+                  <option value="wait">Waiting</option>
+                  <option value="rent">Rent</option>
+                 </select>
                   </td></tr>
-                  <tr valign=top><td class="bold">The Country You Would Like to Work:</td><td>
-                  <input type=radio name=country value=Malaysia>Malaysia<br>
-                  <input type=radio name=country value=Singapore>Singapore<br>
-                  <input type=radio name=country value=Thailand>Thailand
-                  </td></tr>
-                  <tr><td class="bold">Submit Your Text Resume:</td><td><input name="userfile" type="file"></td></tr>
-                  <tr><td></td><td><input name="submitJob"  type=submit value="Submit Application">&nbsp;&nbsp;<input type=reset value=Clear></td></tr>
+				  <tr><td class="bold">Student ID</td><td><input type=text name=sid></td></tr>
+				  <tr><td class="bold">Place number</td><td><input type=text name=pnum></td></tr>
+				  <tr><td class="bold">Staff ID</td><td><input type=text name=stid></td></tr>
+                  <tr><td></td><td><input name="bookroom"  type=submit value="Submit booking">&nbsp;&nbsp;<input type=reset value=Clear></td></tr>
                   </table>
                   ';
        }
@@ -69,11 +66,8 @@
          if (!$connect = mysql_connect("localhost", "root", "")) {
            die(mysql_error());
          }
-         if (!mysql_select_db("TWT06", $connect))
-          die(mysql_error());
-
-
-         $query = "INSERT INTO `student` VALUES ('{$_POST['sid']}', '{$_POST['fname']}', '{$_POST['lname']}', '{$_POST['saddress']}', '{$_POST['dob']}', '{$_POST['cat']}', '{$_POST['cid']}');";
+         if (mysql_select_db("TWT06", $connect)){
+       $query = "INSERT INTO `student`(`student_id`, `fname`, `lname`, `address`, `dob`, `category`, `course_id`) VALUES ('$sid', '$fname', '$lname', '$saddress', '$dob', '$cat', '$cid');";
          mysql_query($query) or die(mysql_error());
 
          $body = "Registration Done!<br>";
@@ -82,6 +76,7 @@
 
 
        }
+	   }
        else if (isset($_POST['button3'])){
          $body = "
          <h1>Reservation Status Checking</h1>
@@ -114,7 +109,7 @@
 
            $query = "select * from lease where lease_number='" . $_POST['lnumber'] . "'";
            $result = mysql_query($query) or die(mysql_error());
-
+$body="";
            while ($row = mysql_fetch_row($result)){
              $body = "
              <h1>Reservation Status Checking</h1>
@@ -134,15 +129,47 @@
          }
 
      }
-       else if (isset($_POST['submitJob'])){
+       else if (isset($_POST['bookroom'])){
+		    if (!$connect = mysql_connect("localhost", "root", "")) {
+           die(mysql_error());
+         }
+         if (mysql_select_db("TWT06", $connect)){
+       $query = "INSERT INTO `lease`(lease_number,`start_date`, `end_date`, `status`, `student_id`, `place_number`, `staff_id`) VALUES ('$lnumber','$sdate', '$edate', '$status', '$sid', '$pnum', '$stid');";
+         mysql_query($query) or die(mysql_error());
+
+         $body = "Booking Done!<br>";
          
        }
+	   }
        else if (isset($_POST['button4'])){
+		   if (!$connect = mysql_connect("localhost", "root", "")) {
+             die(mysql_error());
+           }
+           if (mysql_select_db("TWT06", $connect)){
+           $query = "select * from student";
+           $result = mysql_query($query) or die(mysql_error());
+           $body="";
+           while ($row = mysql_fetch_row($result)){
+             $body =$body."
+             <table>
+             <tr><td class=\"bold\">Student ID:</td><td>$row[0]</td></tr>
+             <tr><td class=\"bold\">First Name:</td><td>$row[1]</td></tr>
+             <tr><td class=\"bold\">Last Name:</td><td>$row[2]</td></tr>
+			 <tr><td class=\"bold\">Date Of Birth:</td><td>$row[3]</td></tr>
+              <tr><td class=\"bold\">Category:</td><td>$row[4]</td><td>
+             <tr><td class=\"bold\">Course ID:</td><td>$row[5]</td></tr>
+			 <tr><td class=\"bold\">Address:</td><td>$row[6]</td></tr>
+			 </table><hr>";
+		   }
+		   }
+	   }
+	   
+        else if (isset ($_POST['buttonlogout'])) { 
+  session_start();
+   unset($_SESSION['admin']);
+    header('location:index.php');
 
 
-       }
-       else {
-         $body = "<H1>Welcome to MMU Accommodation System</H1>";
        }
      ?>
   </head>
