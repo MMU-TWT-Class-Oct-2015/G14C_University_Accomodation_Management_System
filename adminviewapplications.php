@@ -11,9 +11,9 @@ include 'database.php';
     background-repeat: no-repeat;
 
 	}
-	
-	
-	
+
+
+
 	</style>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -51,20 +51,7 @@ $result = mysql_query($query) or die(mysql_error());
 while ($row = mysql_fetch_row($result))
 {
 ?>
-<<<<<<< HEAD
-
-             <table>
-             <tr><td class="bold">Student ID:</td><td><?php echo $row[0] ?></td></tr>
-             <tr><td class="bold">First Name:</td><td><?php echo $row[1] ?></td></tr>
-             <tr><td class="bold">Last Name:</td><td><?php echo $row[2] ?></td></tr>
-			 <tr><td class="bold">Date Of Birth:</td><td><?php echo $row[3] ?></td></tr>
-              <tr><td class="bold">Category:</td><td><?php echo $row[4] ?></td><td>
-             <tr><td class="bold">Course ID:</td><td><?php echo $row[5] ?></td></tr>
-			 <tr><td class="bold">Address:</td><td><?php echo $row[6] ?></td></tr>
-		 </table><hr>
-<?php
-=======
-             <tr align="center">        
+             <tr align="center">
              <td><?php echo $row[0] ?></td>
              <td><?php echo $row[1] ?></td>
              <td><?php echo $row[2] ?></td>
@@ -74,8 +61,7 @@ while ($row = mysql_fetch_row($result))
 			 <td><?php echo $row[3] ?></td>
 			 </tr>
 			 
-<?php  
->>>>>>> 8f4fe1577f239888f8f4ed070be3234a8027bad1
+<?php
 }
 ?>
 

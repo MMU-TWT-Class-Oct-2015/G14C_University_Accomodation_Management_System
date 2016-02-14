@@ -48,13 +48,8 @@ if (isset($_POST['bookroom'])){
 </table>
 <br>
 <form name="booking" method="POST" action="">
-<<<<<<< HEAD
-<table width="1050px" align="center" border="0">
-                  <tr><td class="bold">Lease num</td><td><input type=text name=lnumber></td></tr>
-=======
 <table width="400px" align="center" border="0">
-                  <tr><td class="bold">Least num</td><td><input type=text name=lnumber></td></tr>
->>>>>>> 8f4fe1577f239888f8f4ed070be3234a8027bad1
+                  <tr><td class="bold">Lease num</td><td><input type=text name=lnumber> eg : L*****</td></tr>
                   <tr><td class="bold">Start Date</td><td><input type=date name=sdate></td></tr>
                   <tr><td class="bold">End Date</td><td><input type=date name=edate></td></tr>
                   <tr valign=top><td class="bold">Current Status</td>

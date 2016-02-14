@@ -10,8 +10,8 @@ if ($_SESSION['login'] != true)
 		<li><a href="adminregistration.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;" ><b>Registration</b></a></li>
         <li><a href="adminroombooking.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>Room Booking</b></a></li>
 		<li><a href="admincheckstatus.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>Check Status</b></a></li>
-		<li><a href="adminviewapplications.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>View Applications</b></a></li>
-		<li><a href="logout.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>LOGOUT</b></a></li>	 
+		<li><a href="adminviewapplications.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>View Applicants</b></a></li>
+		<li><a href="logout.php" onMouseOver="this.style.color='blue'" onMouseOut="this.style.color='#FFFFFF'" style="color:white; text-decoration:none;"><b>LOGOUT</b></a></li>
 		</ul>  
-		</div>    
+		</div>
 </td>
