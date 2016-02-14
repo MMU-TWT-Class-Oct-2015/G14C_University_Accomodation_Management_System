@@ -9,19 +9,20 @@ if(isset($_POST['submitReg'])) {
 	 $cat = $_POST['cat'];
 	 $cid = $_POST['cid'];
 	 $saddress = $_POST['saddress'];
-	 
+	 $rname = $_POST['rname'];
+	 $relationship = $_POST['relationship'];
+	 $rtel = $_POST['rtel'];
+	 $raddress = $_POST['raddress'];
+
 	 $query = "INSERT INTO student VALUES('$stuid', '$fname', '$lname', '$saddress', '$dob', '$cat', '$cid')";
 	 mysql_query($query) or die(mysql_error());
-	$message = "Register Sucessfullyully";
+
+	 $sql = "INSERT INTO relative VALUES('$rname', '$relationship', '$raddress', '$rtel', '$stuid')";
+	 mysql_query($sql) or die(mysql_error());
+
+	$message = "Register Sucessfully";
 	echo "<script type='text/javascript'>alert('$message');</script>";
-	 
-	 
-	 
 }
-
-
-
-
 ?>
 <html>
 <head>
@@ -31,10 +32,10 @@ if(isset($_POST['submitReg'])) {
 	background:url(images/TM.jpg);
 	background-size: 1050px 115px;
     background-repeat: no-repeat;
-	
+
 	}
 	</style>
-    <link rel="stylesheet" type="text/css" href="style.css">	
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <table width="1050px" align="center" border="0">
@@ -45,7 +46,7 @@ if(isset($_POST['submitReg'])) {
 	<tr>
     <?php include 'adminheader.php'; ?>
     </tr>
-	
+
 </tbody>
 </table>
 <br>
@@ -62,10 +63,15 @@ if(isset($_POST['submitReg'])) {
                   <tr><td class="bold">Course ID:</td><td><input type="text" name="cid"></td></tr>
                   <tr><td class="bold" valign=top>Address:</td><td>
                   <textarea name="saddress" wrap="soft" cols="35" rows="10"></textarea>
-                  </td>
-				  </tr>
+                  </td></tr>
+									<tr><td colspan="2"><h3>Next of Kin Information</h3></td></tr>
+									<tr><td class="bold">Name:</td><td><input type="text" name="rname"></td></tr>
+									<tr><td class="bold">Relationship:</td><td><input type="text" name="relationship"></td></tr>
+									<tr><td class="bold">Telephone No:</td><td><input type="text" name="rtel"></td></tr>
+									<tr><td class="bold" valign=top>Address:</td><td>
+                  <textarea name="raddress" wrap="soft" cols="35" rows="10"></textarea>
                   <tr><td></td><td><input name="submitReg" type="submit" value="Submit!">&nbsp;&nbsp;<input type="reset" value="Clear"></td></tr>
-				  
+
 </table>
 </form>
 
