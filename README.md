@@ -139,6 +139,17 @@ The forth and final form is the main form (adminindex.php) where it is only acce
 - This is the result of the inline CSS
 ![inline css result](http://i.imgur.com/QCHU1Bi.png)
 
+---
+
+##### HTTPS
+- The code implement in each page for forcing the page to run at https rather than http
+![https code](http://i.imgur.com/b9jRIkw.png)
+
+- The result of https code
+![https](http://i.imgur.com/joicWu1.png)
+
+---
+
 ## **Conclusion**
 We develped this project in order to complete the requirment of our web design and application subjet's assesment.We are a groupe of 4 people studying in MMU Melaka Univeristy completed this project on 15,feb 2016.
 
