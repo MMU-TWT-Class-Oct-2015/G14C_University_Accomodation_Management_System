@@ -1,6 +1,10 @@
 <?php
 include 'database.php';
-
+if($_SERVER['HTTPS']!=="on")
+  {
+     $redirect= "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+     header("Location:$redirect");
+  }
 if(isset($_POST['admlogin']))
 {
 	$name = $_POST['admname'];
