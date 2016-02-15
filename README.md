@@ -2,6 +2,12 @@
 **(Project assignment University Accomodation Management System, Project No 6)**
 
 ---
+## **Introduction About the system**
+This system is about University Accomodation Management.We create a website that can manage the activities regradring with Melaka University Hostel.
+## **Objective Of The Project**
+To help the Melaka University Hostel Administration manage the activities online.
+## **Project Scope**
+This project will consist of creating a website based upon the necessary function to monitor your Hostel administration. The project will be completed by February, 2016. Functions of the game will include admin login,student registration, room booking,checking the stauts, view the aplication and logout.
 ## **Required software to complete our system**
 
 The following software stated below will be needed to be installed into our system before getting started.
@@ -17,7 +23,9 @@ The text editors are needed to be able to write the code for our project which i
 
 ##### Web Browser
 Web Browser is used to view the design of our system and interact with it. On the other hand web broswer is also used to open the Xampp interface and also to start the SQL. A web browser can be used based on our preference either Google Chrome, Mozilla Firefox, Opera, Safari or etc.
-
+#### How To Run
+In order to run the program first clone this project into your local computer then you have to import the import_this_to_localhost.sql file to phpmyadmin which has username as "root", host as "localhost" and "no password" is needed.
+When open project in the webbrowser you click the Admistration login tab inorder to login with a username and password as "admin".
 ---
 ## **Operating the system**
 
@@ -131,4 +139,13 @@ The forth and final form is the main form (adminindex.php) where it is only acce
 - This is the result of the inline CSS
 ![inline css result](http://i.imgur.com/QCHU1Bi.png)
 
+## **Conclusion**
+We develped this project in order to complete the requirment of our web design and application subjet's assesment.We are a groupe of 4 people studying in MMU Melaka Univeristy completed this project on 15,feb 2016.
+
 ---
+
+
+
+
+
+
